@@ -4,6 +4,8 @@ Prywatna PWA (single user): **MIT dnia + 3 poboczne taski + zamknięcie dnia ze 
 **nawyki** ze streakami oraz **spend tracker** (zakupy ze splitem podkategorii, miasto,
 subskrypcje, zrzutki/przelewy z tagiem „wyjazdy", zwroty) ze statami miesięcznymi.
 
+**Live: https://mariuszsportigio.github.io/personal-tracker/**
+
 Fork techniczny apki [drink-responsible](https://github.com/mariuszsportigio/drink-responsible)
 (ten sam stack: Vite + React + TS + Tailwind 4 + PWA injectManifest). UI po polsku, kod po
 angielsku, dane wyłącznie w `localStorage` (klucz `personal-tracker/v1`).
@@ -30,5 +32,8 @@ npm run icons      # regeneracja ikon PWA (fioletowe — odróżnienie od drink-
 
 ## Deploy
 
-Workflow `deploy.yml` (GitHub Pages) jest w repo — wymaga utworzenia zdalnego repozytorium
-`personal-tracker` i pusha. Do tego czasu apka działa lokalnie przez `npm run dev`.
+Automatyczny: push na `main` → workflow `deploy.yml` → GitHub Pages
+([repo](https://github.com/mariuszsportigio/personal-tracker)). Ręcznie: `gh workflow run deploy.yml`.
+
+Na telefonie: otwórz link → „Dodaj do ekranu głównego". Dane (w tym wydatki) zostają wyłącznie
+w `localStorage` na urządzeniu — backup przez eksport JSON w zakładce Staty.
