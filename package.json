@@ -1,0 +1,32 @@
+{
+  "name": "personal-tracker",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "icons": "node scripts/gen-icons.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.24.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "recharts": "^2.15.3",
+    "workbox-core": "^7.3.0",
+    "workbox-precaching": "^7.3.0",
+    "workbox-routing": "^7.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.7",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "puppeteer-core": "^25.3.0",
+    "tailwindcss": "^4.1.7",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-pwa": "^1.0.0"
+  }
+}
